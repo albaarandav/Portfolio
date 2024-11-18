@@ -78,3 +78,12 @@ function fadeIn(el, display) {
         }
     })();
 };
+// Abrir y cerrar menú lateral
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('menu-open');
+        menu.classList.toggle('menu-closed');
+    });
+}
